@@ -1,4 +1,3 @@
-
 import MovieCard from './components/MovieCard/MovieCard';
 import './App.css';
 
