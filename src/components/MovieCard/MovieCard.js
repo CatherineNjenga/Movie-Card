@@ -1,7 +1,8 @@
-function MovieCard ({title}) {
+function MovieCard () {
     return (
         <div>
-            <h1>{title}</h1>
+            <h1>Title</h1>
+            <p>Paragraph</p>
         </div>
     )
 }
