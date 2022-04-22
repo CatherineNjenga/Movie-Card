@@ -1,0 +1,54 @@
+:root {
+    --apache: #d1b267;
+  }
+  .card {
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .2s linear;
+    width: 40%;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    
+  }
+
+  .card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+  }
+  
+  .title {
+    color: var(--apache);
+    color: #666;
+    font-size: x-large;
+    font-weight: 900;
+    margin-top: 0;
+  }
+  
+  .description {
+    font-size: large;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .card {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .card {
+      width: 90%;
+      margin: 1rem -0.5rem 1rem 0;
+    }
+  }

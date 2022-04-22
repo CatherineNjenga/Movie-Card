@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import MovieCard from "./components/MovieCard/MovieCard";
-import './App.css';
+import stylesheet from "./App.module.css"
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -14,42 +15,26 @@ function App() {
         })
         .then((moviesData) => {
           setData(moviesData);
-          console.log(moviesData)
         })
         .catch((err) => {
         console.log(err);
         });
     }, []);
 
-    // let title = [
-    //   ...new Set(
-    //     data.map((m) => {
-    //       return m.title
-    //     })
-    //   )
-    // ]
-    // let description = [
-    //   ...new Set(
-    //   data.map((m) => {
-    //     return m.description
-    //   })
-    //   )
-    // ]
 
   return (
-    <div>
-      {/* <ul>
-        {data &&
-          data.map(({ id, title }) => (
-            <li key={id}>
-              <h3>{title}</h3>
-            </li>
-          ))}
-      </ul> */}
-      {data.forEach((movie) => {
-        return <MovieCard movie={movie} />
-      })}  
+    <main className={stylesheet.App}>
+    <div className={stylesheet.companyContainer}>
+      <img src ="movies.png" alt="" />
+      <p className={stylesheet.description}>Details about the company</p>
     </div>
+    <div className={stylesheet.movieContainer}>
+      {data.map((movie, i) => {
+        return <MovieCard key ={i} movie={movie} />    
+        
+      })}
+    </div>
+    </main>
   );
 }
 
