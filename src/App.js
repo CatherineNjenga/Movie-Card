@@ -20,8 +20,6 @@ function App() {
         console.log(err);
         });
     }, []);
-
-
   return (
     <main className={stylesheet.App}>
     <div className={stylesheet.companyContainer}>
@@ -30,12 +28,12 @@ function App() {
     </div>
     <div className={stylesheet.movieContainer}>
       {data.map((movie, i) => {
-        return <MovieCard key ={i} movie={movie} />    
-        
+        return <MovieCard key ={i} movie={movie} />     
       })}
     </div>
     </main>
-  );
+  )
+   
 }
 
 export default App;
