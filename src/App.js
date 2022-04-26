@@ -24,7 +24,8 @@ function App() {
     <main className={stylesheet.App}>
     <div className={stylesheet.companyContainer}>
       <img src ="movies.png" alt="" />
-      <p className={stylesheet.description}>Details about the company</p>
+      <h2 className={stylesheet.description}>About Studio Ghibli</h2>
+      <p>Founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki. Included are the twenty-two feature-length films.Flip the card to see movie rating. </p>
     </div>
     <div className={stylesheet.movieContainer}>
       {data.map((movie, i) => {

@@ -29,5 +29,52 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-left: auto;
-  margin-top: 4rem;
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .movieContainer {
+    width: 75%;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .companyContainer {
+    width: 30%;
+  }
+
+  .movieContainer {
+    width: 60%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .companyContainer {
+    background-color: white;
+    width: 80%;
+    border-bottom: 2px solid var(--apache);
+    border-right: none;
+    position: sticky;
+    margin: 0 auto -3rem auto;
+    padding-bottom: 1rem;
+    z-index:1
+  }
+
+  .movieContainer {
+    width: 300%;
+  }
 }
