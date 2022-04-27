@@ -35,4 +35,4 @@ To get the site running locally:
 * Run `npm start` to run the application in a production environment
 * Start application by running `npm start`
 
-Project Link:
+Project Link: https://catherinenjenga.github.io/Movie-Card/
