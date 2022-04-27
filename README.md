@@ -10,6 +10,12 @@ Movie Card is a movies recommendation website based on [Studio Ghibli's API](htt
 * To learn how to use RESTful APIs
 * Building a project with React
 
+## Built with
+* React.js
+* JavaScript
+* CSS
+* HTML
+
 ## Challenges Encountered
 * Adding the flip feature using React and CSS. I had purposed to only utilize React and CSS when adding the feature instead of using the ReactCardFlip compoment (a TypeScript npm).
 * Fetching Studio Ghibli's API using React. I initially only understood how to fetch using vanilla JavaScript.
@@ -20,12 +26,6 @@ Movie Card is a movies recommendation website based on [Studio Ghibli's API](htt
 ## Key Features
 * Front-end(React)
 * APIs(Studio Ghibli)
-
-## Tech Stack
-* React.js
-* JavaScript
-* CSS
-* HTML
 
 ## Getting Started
 To get the site running locally:
